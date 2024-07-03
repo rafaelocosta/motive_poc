@@ -261,6 +261,6 @@ def execute_graph(
 
     return {
         "query": response.get('query', ''),
-        "data": response.get('data', ''),
         "text_answer": response.get('text_answer', ''),
+        "data": response.get('data', ''),
     }

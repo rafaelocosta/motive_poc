@@ -19,8 +19,8 @@ Ensure you have the following installed:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/rafaelocosta/motive-poc.git
-    cd motive-poc
+    git clone https://github.com/rafaelocosta/motive_poc.git
+    cd motive_poc
     ```
 
 2. Create a `.env` file in the root directory with your OpenAI or GROQ API keys:
