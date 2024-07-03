@@ -1,0 +1,15 @@
+fastapi
+pydantic-core
+pydantic-settings
+pandas
+requests
+tiktoken
+uvicorn
+jq
+pydantic
+langchain
+langchain-groq
+langgraph
+langchain-community
+duckdb
+faiss-cpu

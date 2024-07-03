@@ -1,0 +1,24 @@
+networks:
+  default:
+    name: default-network
+
+services:
+  motive-poc:
+    build:
+      context: .
+    container_name: motive-poc
+    image: motive-poc
+    env_file:
+      - .env
+    networks:
+      default:
+        aliases:
+          - motive
+    ports:
+      - 8081:8081
+    tty: true
+    volumes:
+      - .:/var/task:delegated
+      - /var/task/.venv
+    command: ["uvicorn", "application:app", "--host", "0.0.0.0", "--port", "8081", "--reload"]
+
