@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import re
 from langchain_groq import ChatGroq
+from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
@@ -12,9 +13,9 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 from typing_extensions import TypedDict
 from typing import List, Annotated, Dict, Any
 
-os.environ["GROQ_API_KEY"] = "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"
 
 llm = ChatGroq(temperature=0, model_name="Llama3-70b-8192")
+#llm = ChatOpenAI(model="gpt-4")
 
 db_path = 'db/financial_advisor_data.db'
 

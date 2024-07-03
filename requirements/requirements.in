@@ -13,3 +13,4 @@ langgraph
 langchain-community
 duckdb
 faiss-cpu
+langchain-openai
